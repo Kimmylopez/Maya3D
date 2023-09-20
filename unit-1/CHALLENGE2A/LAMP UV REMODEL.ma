@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: LAMP UV REMODEL.ma
-//Last modified: Fri, Sep 15, 2023 10:17:03 PM
+//Last modified: Fri, Sep 15, 2023 10:28:52 PM
 //Codeset: UTF-8
 requires maya "2023";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.2.1.1";
@@ -10,12 +10,12 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202211021031-847a9f9623";
 fileInfo "osv" "Mac OS X 10.16";
-fileInfo "UUID" "C99C3B2C-6D43-BCA5-CB23-5EA2296A9C56";
+fileInfo "UUID" "02179B79-2849-A4EB-B211-26BB6ECDECFD";
 createNode transform -s -n "persp";
 	rename -uid "B81A049C-D441-906E-3669-99AF4E18CE0A";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 28 21 28 ;
-	setAttr ".r" -type "double3" -27.938352729602379 44.999999999999972 -5.172681101354183e-14 ;
+	setAttr ".t" -type "double3" 27.374647321050144 19.323388143831945 29.769705317503472 ;
+	setAttr ".r" -type "double3" -25.538352729593562 -317.39999999999429 -2.1604179238834949e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "94841C09-5F4C-4C04-C3B2-04BDE8817CC8";
 	setAttr -k off ".v" no;
@@ -106,20 +106,20 @@ createNode mesh -n "Lamp_remodel:pCylinderShape2" -p "Lamp_remodel:pCylinder2";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "CB5ED6AF-9449-B513-0F07-B59E3A93B74E";
+	rename -uid "3A7FCDF3-C743-B6F4-CD01-6BB2921D1116";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "9CEE3DCA-E446-1468-68D1-208B7B94830D";
+	rename -uid "9876A8A5-6C43-FFD2-B34E-C298F7209131";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "5701E5E2-A94F-8374-39CE-CD952D013910";
+	rename -uid "2ACA33F5-774E-D245-F258-3A9525E37B5D";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "DAA5C35A-514B-0EA4-0E68-4F9CA6F7DC83";
+	rename -uid "ACC99900-B048-8295-03B6-CEB8FC1835A6";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "345FF15A-034E-7EF5-2D7E-20A1C2D9A815";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "EDEA1715-D245-8229-5B7F-A0A8B616C41C";
+	rename -uid "47FFD008-C64A-103A-E6CA-00A16DE1006F";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "C531124E-C143-10B7-CA20-4E951EDBACD0";
 	setAttr ".g" yes;
@@ -373,7 +373,7 @@ createNode polyPlanarProj -n "Lamp_remodel:polyPlanarProj2";
 		 0 10.748278154523785 0 1;
 	setAttr ".ws" yes;
 	setAttr ".pc" -type "double3" -4.2970657432306325e-07 9.1299877166748047 -7.9752464898774633e-07 ;
-	setAttr ".ro" -type "double3" 89.999999578468874 -89.999998565056998 0 ;
+	setAttr ".ro" -type "double3" 89.999999578468874 -89.999998565057012 0 ;
 	setAttr ".ps" -type "double2" 8.4734377161744732 8.8211564219099472 ;
 	setAttr ".cam" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
 createNode polyTweakUV -n "Lamp_remodel:polyTweakUV5";
