@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
-//Name: spaceship-model.ma
-//Last modified: Fri, Oct 27, 2023 05:00:05 PM
+//Name: spaceship-modelDONE.ma
+//Last modified: Fri, Oct 27, 2023 05:01:51 PM
 //Codeset: UTF-8
 requires maya "2023";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.2.1.1";
@@ -10,7 +10,7 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202211021031-847a9f9623";
 fileInfo "osv" "Mac OS X 10.16";
-fileInfo "UUID" "C3476446-3C4A-04E9-85F0-2D9F2C1FD64C";
+fileInfo "UUID" "06F02634-8D42-DF0E-7A19-39AE113BE08A";
 createNode transform -s -n "persp";
 	rename -uid "078AA856-C142-9671-FA41-B0A511217FC5";
 	setAttr ".v" no;
@@ -2240,4 +2240,4 @@ connectAttr "groupId6.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId7.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId8.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId9.msg" ":initialShadingGroup.gn" -na;
-// End of spaceship-model.ma
+// End of spaceship-modelDONE.ma
